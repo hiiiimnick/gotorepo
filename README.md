@@ -6,6 +6,7 @@ Small utility to open the repository remote from the current directory in the br
 
 ### Prerequisites:
 Rust version >= 1.95.0
+git installed
 
 ### Installation steps
 

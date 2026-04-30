@@ -30,16 +30,14 @@ fn main() {
 pub fn from_ssh(binding: String) -> String {
     let temp = binding.replacen(":", "/", 1);
     let url = temp.strip_prefix("git@").expect("fatal error");
-    "https://".to_owned() + url.trim()
+    format!("https://{}", url.trim())
 }
 
 pub fn from_http(binding: String) -> String {
     let url = if binding.starts_with("http") {
         binding.trim().to_owned()
     } else {
-        let mut temp = String::from("https://");
-        temp.push_str(&binding);
-        temp
+        format!("https://{}", binding)
     };
     url
 }

@@ -1,6 +1,6 @@
 # gotorepo
 
-Small utility to open the repository from the current directory in the browser
+Small utility to open the repository remote from the current directory in the browser
 
 ## Installation
 
@@ -25,4 +25,4 @@ Ensure this path is in your PATH to make it available as command
 
 ## Usage
 
-run ```gotorepo``` in the directory of a git repository. 
+run ```gotorepo``` in the directory of a git repository with a remote. 
